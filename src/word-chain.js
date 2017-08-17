@@ -79,3 +79,5 @@ function makeChain(source, destination, pchain, dictionary) {
 module.exports = function wordChain(source, destination, dictionary) {
   return makeChain(source, destination, [], dictionary);
 };
+
+console.log(makeChain('cat', 'dog', [], ['cat', 'hat', 'mat', 'dogs', 'bats', 'bat', 'cog', 'dog']));

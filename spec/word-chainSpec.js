@@ -1,4 +1,4 @@
-const wordChain = require('../src/wordChain');
+const wordChain = require('../src/word-chain');
 
 describe('when trying to get from cat to dog', () => {
   it('using a filled dictionary', () => {
