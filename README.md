@@ -1,5 +1,7 @@
-# Word Chain [![Build Status](https://travis-ci.com/NimerA/WordChain.svg?token=XU7jeERUtz3KqArrdsEp&branch=master)](https://travis-ci.com/NimerA/WordChain)
+[![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
 
+# Word Chain 
 
 A Simple implementation of the Word Chain game using backtracking. 
 
@@ -20,3 +22,9 @@ const dictionary = ['cat', 'hat', 'hats', 'bats', 'mat', 'mats', 'at', 'bat', 'c
 const result = wordChain('cat', 'dog', dictionary);
 //=> ['cat', 'cot', 'cog', 'dog']
 ```
+
+
+[npm-image]: https://img.shields.io/npm/v/word-chain.svg
+[npm-url]: https://www.npmjs.com/package/word-chain
+[travis-image]: https://travis-ci.com/NimerA/WordChain.svg?token=XU7jeERUtz3KqArrdsEp&branch=master
+[travis-url]: https://travis-ci.com/NimerA/WordChain

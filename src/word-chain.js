@@ -58,17 +58,14 @@ function makeChain(source, destination, pchain, dictionary) {
   if (source === '' || destination === '') {
     return [];
   }
-
-  let chain = [];
-  chain = chain.concat(pchain);
+  const chain = Array.from(pchain);
   chain.push(source);
   if (source === destination) {
     return chain;
   }
   const candidates = getWords1CharDiff(source, chain, dictionary);
   for (let i = 0; i < candidates.length; i += 1) {
-    const word = candidates[i];
-    const result = makeChain(word, destination, chain, dictionary);
+    const result = makeChain(candidates[i], destination, chain, dictionary);
     if (result.length > 0) {
       return result;
     }
@@ -79,5 +76,3 @@ function makeChain(source, destination, pchain, dictionary) {
 module.exports = function wordChain(source, destination, dictionary) {
   return makeChain(source, destination, [], dictionary);
 };
-
-console.log(makeChain('cat', 'dog', [], ['cat', 'hat', 'mat', 'dogs', 'bats', 'bat', 'cog', 'dog']));

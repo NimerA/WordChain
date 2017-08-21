@@ -1,6 +1,6 @@
 {
   "name": "word-chain",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "An Implementation of the game Word Chain.",
   "main": "src/word-chain.js",
   "scripts": {
@@ -17,7 +17,8 @@
     "url": "https://github.com/NimerA/WordChain/issues"
   },
   "homepage": "https://github.com/NimerA/WordChain#readme",
-  "dependencies": { },
+  "dependencies": {
+  },
   "devDependencies": {
     "babel-plugin-istanbul": "^4.1.4",
     "babel-preset-es2015": "^6.24.1",
@@ -28,6 +29,9 @@
     "jasmine": "^2.6.0",
     "jasmine-co": "^1.2.2",
     "nyc": "^11.0.3"
+  },
+  "bin": {
+    "word-chain": "./bin/word-chain.js"
   },
   "nyc": {
     "all": true,
