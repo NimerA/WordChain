@@ -11,7 +11,6 @@ A Simple implementation of the Word Chain game using backtracking.
 $ npm install --save word-chain
 ```
 
-
 ## Usage
 
 ```js
